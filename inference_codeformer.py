@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     parser.add_argument("-i", "--input_path", type=str, default="./inputs/whole_imgs", help="Input image, video or folder. Default: inputs/whole_imgs")
     parser.add_argument("-o", "--output_path", type=str, default=None, help="Output folder. Default: results/<input_name>_<w>")
-    parser.add_argument("-w", "--fidelity_weight", type=float, default=1, help="Balance the quality and fidelity. Default: 0.5")
+    parser.add_argument("-w", "--fidelity_weight", type=float, default=0.5, help="Balance the quality and fidelity. Default: 0.5")
     parser.add_argument("-s", "--upscale", type=int, default=2, help="The final upsampling scale of the image. Default: 2")
     parser.add_argument("--has_aligned", action="store_true", help="Input are cropped and aligned faces. Default: False")
     parser.add_argument("--only_center_face", action="store_true", help="Only restore the center face. Default: False")
